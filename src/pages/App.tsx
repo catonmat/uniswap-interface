@@ -25,6 +25,8 @@ import Swap from './Swap'
 import { OpenClaimAddressModalAndRedirectToSwap, RedirectPathToSwapOnly, RedirectToSwap } from './Swap/redirects'
 import Vote from './Vote'
 import VotePage from './Vote/VotePage'
+import Issue from './Issue'
+import Exercise from './Exercise'
 import { RedirectDuplicateTokenIdsV2 } from './AddLiquidityV2/redirects'
 import { PositionPage } from './Pool/PositionPage'
 import AddLiquidity from './AddLiquidity'
@@ -103,6 +105,9 @@ export default function App() {
                 <Route exact strict path="/pool/v2" component={PoolV2} />
                 <Route exact strict path="/pool" component={Pool} />
                 <Route exact strict path="/pool/:tokenId" component={PositionPage} />
+
+                <Route exact strict path="/issue" component={Issue} />
+                <Route exact strict path="/exercise" component={Exercise} />
 
                 <Route
                   exact

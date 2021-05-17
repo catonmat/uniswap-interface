@@ -342,7 +342,7 @@ export default function Header() {
       </HeaderRow>
       <HeaderLinks>
         <StyledNavLink id={`swap-nav-link`} to={'/swap'}>
-          {t('swap')}
+          {t('Trade')}
         </StyledNavLink>
         <StyledNavLink
           id={`pool-nav-link`}
@@ -357,12 +357,12 @@ export default function Header() {
         >
           {t('pool')}
         </StyledNavLink>
-        <StyledNavLink id={`stake-nav-link`} to={'/vote'}>
-          Vote
+        <StyledNavLink id={`issue-nav-link`} to={'/issue'}>
+          Issue
         </StyledNavLink>
-        <StyledExternalLink id={`stake-nav-link`} href={'https://info.uniswap.org'}>
-          Charts <span style={{ fontSize: '11px', textDecoration: 'none !important' }}>↗</span>
-        </StyledExternalLink>
+        <StyledNavLink id={`exercise-nav-link`} to={'/exercise'}>
+          Exercise
+        </StyledNavLink>
       </HeaderLinks>
       <HeaderControls>
         <HeaderElement>
